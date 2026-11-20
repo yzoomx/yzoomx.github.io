@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reader</title>
+    <link rel="icon" href="image/android-chrome-192x192.png" type="image/png" sizes="192x192">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="contect">
+    <div class="header">
+        <div class="nav-top-bar">
+            <div class="container-fluid gx-0">
+                <div class="text-container">
+                    <div class="text-content">
+                        <a class="container-Em" href="mailto: Yousefaboimsail@gmail.com">
+                            <p class="para-text"><span class="span-text"><i class="fa-solid fa-envelope"></i>
+                                    Yousefaboimsail@gmail.com</span></p>
+                        </a>
+                        <p class="para-text"><span class="span-text"><i class="fa-solid fa-phone"></i>
+                                +90 (541) 158 31 53</span></p>
+                    </div>
+                    <div class="navbar-container">
+                        <nav class="navbar navbar-expand-lg">
+                            <div class="container-fluid">
+                                <a class="navbar-brand" href="index.html">
+                                    <h3 class="heading-logo">Read<span class="er">er</span></h3>
+                                </a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="Sales.html">Sales</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="About.html">About</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="contectus.html">Contact Us</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Browse
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="RandomBooks.html">Random Books</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="Fiction.html">Fiction</a></li>
+                                                <li><a class="dropdown-item" href="TrueCrime.html">True Crime</a></li>
+                                                <li><a class="dropdown-item" href="Horror.html">Horror</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <form class="d-flex" role="search">
+                                        <input class="form-control me-2" type="search" placeholder="Search"
+                                            aria-label="Search">
+                                        <button class="btn btn-outline-success" type="submit">Search</button>
+                                    </form>
+                                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+
+                                        <button class="btn btn-Light me-md-2" type="button" id="navbarLoginBtn">Log
+                                            In</button>
+
+                                        <button class="btn btn-Light" type="button" id="navbarSignupBtn">Sign
+                                            Up</button>
+
+                                    </div>
+                                    <div class="shopping-nav">
+                                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                                            aria-controls="offcanvasScrolling">
+                                            <i id="cart" class="fa-solid fa-basket-shopping"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Shopping Cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body"> <!-- Added container -->
+                <div class="container"> <!-- Container starts here -->
+                    <div class="row">
+                        <div class="col">
+                            <!-- Your content here -->
+                            <h6  style="margin-left: -100px;">Your Cart is Empty</h6>
+                          <a href="RandomBooks.html"> <button type="button" class="btn btn-warning" style="margin-top: 300px;">Add Items</button></a> 
+                        </div>
+                    </div>
+                </div> <!-- Container ends here -->
+            </div>
+        </div>
+        
+        <div class="home-section">
+            <div class="container-fluid">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="home-content img-1">
+                                <div class="content-home">
+                                    <h3 class="heading-home">Explore new books</h3>
+                                    <h2 class="heading-lg-home">with the Reader</h2>
+                                    <a href="RandomBooks.html" class="btn-home">Start The Journey</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="home-content img-2">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="home-content img-3">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="home-content img-4">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span><i class="fa-solid icon-scroll fa-angles-left"></i></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span><i class="fa-solid icon-scroll fa-angles-right"></i></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="about">
+        <h2 class="heading-about">About Our Book Shop</h2>
+        <p class="para-about-details">
+            Welcome to Reader, your ultimate destination for a world of books! Our passion for literature drives us
+            to provide a diverse selection of books to cater to every reader’s taste. From the latest bestsellers to
+            timeless classics, our carefully curated collection has something for everyone.
+        </p>
+    </section>
+    <!--Coming soon Start-->
+
+
+    <div id="card-1" class="container-book mt-5">
+        <div class="row" >
+            <div class="col-md-4">
+                <div class="card h-100 mb-3  ">
+                    <div class="row g-0" >
+                        <div class="col-md-4">
+                            <img src="image/imgb-1.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">What Is Life?</h5>
+                                <p class="card-text">"What is Life?" by Erwin Schrödinger, based on his 1943 lectures at
+                                    Trinity College, Dublin, explores the relationship between physics and biology,
+                                    addressing fundamental questions about the nature of living organisms.</p>
+                                <i>Coming Soon</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card  h-100 mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="image/imgb-2.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Pride and Prejudiceby</h5>
+                                <p class="card-text">This timeless novel of love and societal expectations is a staple
+                                    of English literature and a favorite among fans of romance and historical fiction.
+                                </p>
+                                <i>Coming Soon</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card  h-100 mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="image/imgb-3.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Alice's Adventures in Wonderlandby</h5>
+                                <p class="card-text">ewis Carroll: This whimsical tale of a young girl's journey through
+                                    a nonsensical world is a classic of children's literature, loved for its imaginative
+                                    characters and witty dialogue. </p>
+                                <i>Coming Soon</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Coming soon end-->
+
+    <!--The books in the store-->
+
+    <section class="about">
+        <h2 class="heading-about">New Arrival</h2>
+    </section>
+
+    <div id="card" class="container mt-5">
+        <div class="row" style="margin-right: 50px;">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card  h-100" style="width: 18rem;">
+                    <a href="Horror.html">
+                        <img src="image/imgb-4.jpg" class="card-img-top" alt="The Haunting of Hill House Book">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">The Haunting of Hill House</h5>
+                        <p class="card-text">by Shirley Jackson: A classic ghost story that delves into psychological
+                            terror and the darkness lurking within the human psyche.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card  h-100" style="width: 18rem;">
+                    <a href="Fiction.html">
+                        <img src="image/imgb-5.jpg" class="card-img-top" alt="Bird Box Book">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Bird Box</h5>
+                        <p class="card-text">A post-apocalyptic thriller where unseen creatures drive people to madness
+                            if they see them.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card  h-100" style="width: 18rem;">
+                    <a href="TrueCrime.html">
+                        <img src="image/imgb-6.jpg" class="card-img-top" alt="Ring book">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Ring</h5>
+                        <p class="card-text">A Japanese horror novel about a cursed videotape that kills anyone who
+                            watches it within seven days.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card  h-100" style="width: 18rem;">
+                    <a href="TrueCrime.html">
+                        <img src="image/imgb-7.jpg" class="card-img-top" alt="In Cold Blood Book">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">In Cold Blood</h5>
+                        <p class="card-text">A non-fiction novel detailing the brutal murder of a Kansas family and the
+                            subsequent investigation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card  h-100" style="width: 18rem;">
+                    <a href="TrueCrime.html">
+                        <img src="image/imgb-8.webp" class="card-img-top" alt="Helter Skelter Book">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Helter Skelter</h5>
+                        <p class="card-text">A meticulously researched account of the Manson Family murders and the
+                            subsequent trial.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card  h-100" style="width: 18rem;">
+                    <a href="Fiction.html">
+                        <img src="image/imgb-9.jpg" class="card-img-top" alt="The Devil in the White City Book">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">The Devil in the White City </h5>
+                        <p class="card-text">A non-fiction narrative interweaving the stories of a serial killer and the
+                            architect of the 1893 World's Fair in Chicago.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card  h-100" style="width: 18rem;">
+                    <a href="RandomBooks.html">
+                        <img src="image/imgb-10.jpg" class="card-img-top" alt="Pride and Prejudice">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Pride and Prejudice</h5>
+                        <p class="card-text">A witty and timeless novel about love, class, and social expectations in
+                            19th-century England.A witty and timeless novel about love, class, and social expectations
+                            in 19th-century England.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card  h-100" style="width: 18rem;">
+                    <a href="Fiction.html">
+                        <img src="image/imgb-11.jpg" class="card-img-top"
+                            alt="The Hitchhiker's Guide to the Galaxy Book">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">The Hitchhiker's Guide to the Galaxy</h5>
+                        <p class="card-text"> hilarious science fiction comedy about an Englishman who accidentally
+                            escapes Earth's destruction and travels through space.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card  h-100" style="width: 18rem;">
+                    <a href="Fiction.html">
+                        <img src="image/imgb-12.jpg" class="card-img-top" alt="One Hundred Years of Solitude Book">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">One Hundred Years of Solitude</h5>
+                        <p class="card-text">A magical realist epic following seven generations of the Buendía family in
+                            the fictional town of Macondo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card  h-100" style="width: 18rem;">
+                    <a href="RandomBooks.html">
+                        <img src="image/imgb-13.jpg" class="card-img-top"
+                            alt="Sapiens: A Brief History of Humankind Book">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Sapiens: A Brief History of Humankind</h5>
+                        <p class="card-text">A sweeping overview of human history, from our evolutionary origins to the
+                            present day.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card  h-100" style="width: 18rem;">
+                    <a href="RandomBooks.html">
+                        <img src="image/imgb-14.jpg" class="card-img-top" alt="Man's Search for Meaning Book">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Man's Search for Meaning</h5>
+                        <p class="card-text">A powerful memoir about finding meaning and purpose in the face of
+                            suffering, based on the author's experiences in Nazi concentration camps.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card  h-100" style="width: 18rem;">
+                    <a href="RandomBooks.html">
+                        <img src="image/imgb-15.jpg" class="card-img-top" alt="Born a Crime Book">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Born a Crime</h5>
+                        <p class="card-text">The comedian's memoir about growing up mixed-race in apartheid South
+                            Africa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--The books in the store end-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="authModalLabel">Sign Up</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="form-box">
+                            <h1 id="formTitle">Sign Up</h1>
+                            <form>
+                                <div class="input-group">
+                                    <div class="input-field" id="nameField">
+                                        <i class="fa-solid fa-user"></i>
+                                        <input type="text" placeholder="Name">
+                                    </div>
+                                    <div class="input-field">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <input type="email" placeholder="Email">
+                                    </div>
+                                    <div class="input-field" id="passwordField">
+                                        <i class="fa-solid fa-lock"></i>
+                                        <input type="password" placeholder="Password">
+                                    </div>
+                                    <p>
+                                        Lost password?
+                                        <a href="#" id="forgotPasswordBtn">
+                                            Click Here
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="btn-field">
+                                    <button type="button" id="formSignupBtn">Sign Up</button>
+                                    <button type="button" id="formLoginBtn" class="disable">Log In</button>
+                                </div>
+                                <div class="btn-field">
+                                    <div></div>
+                                    <button type="button" id="formSendBtn" class="disable">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        // Code to handle form switching inside the modal
+        let formSignupBtn = document.getElementById("formSignupBtn");
+        let formLoginBtn = document.getElementById("formLoginBtn");
+        let formSendBtn = document.getElementById("formSendBtn");
+        let nameField = document.getElementById("nameField");
+        let formTitle = document.getElementById("formTitle");
+        let passField = document.getElementById("passwordField");
+        let forgotPass = document.getElementById("forgotPasswordBtn");
+        let navbarLogin = document.getElementById("navbarLoginBtn");
+        let navbarSignup = document.getElementById("navbarSignupBtn");
+
+        formSendBtn.onclick = function () {
+            passField.style.maxHeight = "60px";
+            formSendBtn.style.maxHeight = "0";
+            formTitle.innerHTML = "Log In";
+            formSignupBtn.classList.remove("disable");
+            formLoginBtn.classList.remove("disable");
+        }
+
+        forgotPass.onclick = function () {
+            nameField.style.maxHeight = "0";
+            passField.style.maxHeight = "0";
+            formSendBtn.style.maxHeight = "60px";
+            formTitle.innerHTML = "Forgot Password";
+            formSignupBtn.classList.add("disable");
+            formLoginBtn.classList.add("disable");
+            formSendBtn.classList.remove("disable");
+        }
+
+        formLoginBtn.onclick = function () {
+            nameField.style.maxHeight = "0";
+            formSendBtn.style.maxHeight = "0";
+            passField.style.maxHeight = "60px";
+            formTitle.innerHTML = "Log In";
+            formSignupBtn.classList.remove("disable");
+            formLoginBtn.classList.remove("disable");
+            formSendBtn.classList.remove("disable");
+        }
+
+        formSignupBtn.onclick = function () {
+            nameField.style.maxHeight = "60px";
+            passField.style.maxHeight = "60px";
+            formSendBtn.style.maxHeight = "0";
+            formTitle.innerHTML = "Sign Up";
+            formSignupBtn.classList.remove("disable");
+            formLoginBtn.classList.remove("disable");
+        }
+
+
+        // Code to handle navbar button clicks to show the modal
+        let navbarLoginBtn = document.getElementById("navbarLoginBtn");
+        let navbarSignupBtn = document.getElementById("navbarSignupBtn");
+
+        navbarLoginBtn.onclick = function () {
+            formLoginBtn.click();
+            new bootstrap.Modal(document.getElementById('authModal')).show();
+        }
+
+        navbarSignupBtn.onclick = function () {
+            formSignupBtn.click();
+            new bootstrap.Modal(document.getElementById('authModal')).show();
+        }
+    </script>
+    </div>
+    <footer id="fot" class="bg-dark text-white pt-5 pb-4">
+        <div class="container-2. text-center-2 text-md-left">
+            <div class="row text-center-2 text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto ml-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Reader</h5>
+                    <p>Explore boundless worlds with our curated collection of books. Immerse yourself in stories that
+                        captivate, educate, and inspire. Find your next adventure on our shelves, and let the pages
+                        ignite your imagination. Happy reading!</p>
+                        
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto ml-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Info</h5>
+                    <p>
+                        <a href="Q&A.html" class="text-white" style="text-decoration: none;">Q&A</a>
+                    </p>
+                    <p>
+                        <a href="About.html" class="text-white" style="text-decoration: none;">About</a>
+                    </p>
+                    <p>
+                        <a href="contectus.html" class="text-white" style="text-decoration: none;">Contact Us</a>
+                    </p>
+
+                </div>
+                <div  class="col-md-2 col-lg-2 col-xl-2 mx-auto ml-3">
+                    <div class="text-container2">
+                        <div  class="social-links ">
+                            <a id="social-links" href="https://github.com/yzoomx" target="_blank"><i
+                                    class="fa-brands fa-github fa-xl"></i></a>
+                            <a id="social-links" href="" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                            <a id="social-links" href="https://www.linkedin.com/in/yousef-aboismail-8574a1252/" target="_blank"><i
+                                    class="fa-brands fa-linkedin fa-xl"></i></a>
+                            <a id="social-links" href="https://wa.me/905411583153" target="_blank"><i
+                                    class="fa-brands fa-whatsapp fa-xl"></i></a>
+                            <a id="social-links" href="" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <p class="copy">&copy; 2024 Reader. All Rights Reserved.</p>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>
